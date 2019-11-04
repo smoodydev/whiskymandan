@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ review.score }}
+
+{% if review.user %}
+Left By {% review.user %}
+{% else %}
+Annonymous
+{% endfor %}
+
+{% endfor %}
+
+{% endblock %}

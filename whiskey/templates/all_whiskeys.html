@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <h1>Lists of Whiskeys</h1>
+    </div>
+    <div class="row">
+        {% for whiskey in whiskeys %}
+
+        <div class="col-sm-4">
+
+            <h5><a href="{% url 'whiskey' whiskey.id %}">{{ whiskey.name }}</a></h5>
+            <p>{{ whiskey.distiller }}</p>
+            <p>{{ whiskey.blurb}}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

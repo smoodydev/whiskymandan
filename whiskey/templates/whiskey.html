@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-sm-6">
+
+            <p>Here is where an Image would go... </p>
+            <p>If we had them!</p>
+
+        </div>
+
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>{{ whiskey.name }}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Distiller: {{whiskey.distiller}}</p>
+                </div>
+                <div class="col-sm-12">
+                    <p>Whiskey Type: {{whiskey.type}}%</p>
+                </div>
+                <div class="col-sm-12">
+                    <p>Strength: {{whiskey.strength}}%</p>
+                </div>
+                <div class="col-sm-12">
+                    <p>Rating: {{whiskey.average_rating}}</p>
+                </div>
+                <div class="col-sm-12">
+                    <p>{{whiskey.blurb}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+    </div>
+
+    {{ whiskey.name }}
+    {{ whiskey.bio }}
+
+{% endblock %}
